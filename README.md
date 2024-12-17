@@ -47,12 +47,22 @@ Developed by: JAI HARISH R
 */
 ```
 ```
-
+module D_FLIP_FLOP(D,Clock,reset,Q);
+input D,reset,Clock;
+output reg Q;
+always @ (negedge Clock)
+if(!reset)
+Q <= 0;
+else
+Q <= D;
+endmodule
 ```
 **RTL LOGIC FOR FLIPFLOPS**
+![{028B895B-EEE3-48F1-85C8-26ACE772A7A3}](https://github.com/user-attachments/assets/785dcfbe-7b3f-4395-a44a-ee707b6930b9)
 
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+![image](https://github.com/user-attachments/assets/e08e0b69-f2db-495a-ad8b-4c1720f06e4c)
 
 
 **RESULTS**
